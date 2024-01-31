@@ -1,0 +1,4 @@
+name: VanillaSMPEssentials
+version: '${project.version}'
+main: de.chiiicken.vanillasmpessentials.VanillaSMPEssentials
+api-version: '1.20'

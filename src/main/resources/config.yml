@@ -1,0 +1,54 @@
+###### Lightweight Survival Multiplayer Essentials Plugin ####
+#                                                            #
+# This Plugin is a lightweight plugin designed to            #
+# enhance gameplay without getting away from the classic     #
+# Minecraft Vanilla Multiplayer feeling                      #
+#                                                            #
+###### Lightweight Survival Multiplayer Essentials Plugin ####
+
+
+
+## DATA STORAGE
+
+# You can choose between SQL and local
+# SQL supports MySQL and MariaDB Databases
+# local is saving the data by using files in your plugin folder
+# local is selected by default to make the plugin plug and play ready
+
+type: "local"
+
+# Please change type to "SQL" if you want to use an external database
+database:
+  host: "127.0.0.1"
+  port: "3306"
+  user: "root"
+  password: ""
+  database: "smp"
+
+
+# Features
+# Toggle single features
+playtime.enabled: true
+death_coordinates.enabled: true
+restore_inventory.enabled: true
+death_chest.enabled: true
+player_collectibles: true
+
+# Permissions
+playtime:
+  view: ""
+  view.others: "playtime.view.others"
+  view.ranking: ""
+
+restore_inventory:
+  restore_others: "smp.admin"
+  restore_bypass_limit: "smp.restore.bypass_limits"
+
+
+
+## MESSAGES
+
+# Prefix
+messages.prefix: "&2SMP &8|"
+
+messages.console.plugin_initialized: "&aPlugin Successfully "
